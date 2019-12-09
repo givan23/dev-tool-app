@@ -8,7 +8,6 @@ const pjson = require('./package.json');
 
 module.exports = env => {
 
-
   return {
     mode: 'development',
     entry: {

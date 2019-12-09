@@ -1,0 +1,60 @@
+///////////////////////////////////////////////////////////////////////////////
+//
+//  SIDEBAR COMPONENT
+//
+///////////////////////////////////////////////////////////////////////////////
+
+.container {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  font-family: Arial;
+}
+
+.column {
+  height: 100%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #lib-sidebar.sidebar()[@1];
+}
+
+.wrapper-title-sidebar,
+.wrapper-item-sidebar {
+  margin: 3px;
+
+  .item {
+    margin-top: 5px;
+    text-align: center;
+    width: 250px;
+    line-height: 50px;
+    background-color: #lib-sidebar.sidebar()[@2];
+    border: 1.3px #lib-sidebar.sidebar()[@1] solid;
+    color: #lib-sidebar.sidebar()[@3];
+  }
+}
+
+.wrapper-title-sidebar {
+  margin-top: 20px;
+}
+
+// ANIMATION
+.item:hover {
+  border: 2px #lib-sidebar.sidebar()[@4] solid;
+  font-weight: bold;
+}
+
+.button-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 100px;
+  background-color: #0074e4;
+  color: white;
+  border-bottom-left-radius: 50px;
+}
